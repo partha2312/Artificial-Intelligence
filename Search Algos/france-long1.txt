@@ -1,0 +1,42 @@
+
+# The longitude of each city is given in tenths of a degree.
+
+# Longitude difference is the approximate number of kilometers
+# between two cities in the horizontal dimension only
+
+# France is approx. 45 degrees N latitude, so 
+# 1 degree of longitude = (cos 45) (111.32) = .707 * 111.32 = 78.7 km
+#    which we'll round up to 80 km
+# So each tenth of a degree of longitude = approx. 8 km
+
+# 111.32 km = 1 degree of longitude at the equator
+# see http://www.longitudestore.com/how-big-is-one-gps-degree.html
+#   for picture
+
+# So longitude value = 8 * abs (longitude1 - longitude2)
+
+
+Avignon 48
+Bordeaux -6
+Brest -45
+Caen -4
+Calais 18
+
+Dijon 51
+Grenoble 57
+Limoges 12
+Lyon 48
+Marseille 53
+
+Montpellier 36
+Nantes -16
+Nancy 62
+Nice 73
+Paris 23
+
+Rennes -17
+Strasbourg 77
+Toulouse 14
+
+
+

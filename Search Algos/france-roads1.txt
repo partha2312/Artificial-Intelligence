@@ -1,0 +1,95 @@
+
+# The graph to be searched represents roads in France.
+# These are actual intercity distances from the Michelin map.
+
+BREST:
+Rennes 244
+
+RENNES:
+Brest 244
+Caen 176
+Nantes 107
+Paris 348
+
+CAEN:
+Calais 120
+Paris 241
+Rennes 176
+
+CALAIS:
+Caen 120
+Nancy 534
+Paris 297
+
+NANCY:
+Calais 534
+Dijon 201
+Paris 372
+Strasbourg 145
+
+STRASBOURG:
+Dijon 335
+Nancy 145
+
+DIJON:
+Lyon 192
+Nancy 201
+Paris 313
+Strasbourg 335
+
+LYON:
+Avignon 216
+Dijon 192
+Grenoble 104
+Limoges 389
+
+GRENOBLE:
+Avignon 227
+Lyon 104
+
+AVIGNON:
+Grenoble 227
+Lyon 216
+Marseille 99
+Montpellier 121
+
+MARSEILLE:
+Avignon 99
+Nice 188
+
+NICE:
+Marseille 188
+
+MONTPELLIER:
+Avignon 121
+Toulouse 240
+
+TOULOUSE:
+Bordeaux 253
+Limoges 313
+Montpellier 240
+
+BORDEAUX:
+Limoges 220
+Nantes 329
+Toulouse 253
+
+LIMOGES:
+Bordeaux 220
+Lyon 389
+Nantes 329
+Paris 396
+Toulouse 313
+
+NANTES:
+Bordeaux 329
+Limoges 329
+Rennes 107
+
+PARIS:
+Caen 241
+Calais 297
+Dijon 313
+Limoges 396
+Nancy 372
+Rennes 348
