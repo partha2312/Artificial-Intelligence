@@ -92,24 +92,24 @@ def BFS(fromCity, toCity):
             return pathHistory,count
         tempList = dictMap[dest.upper()]
         tempList = sorted(tempList)
-        print("Children are ", end=" ")
+        print("Children are ")
         print(tempList)
         for city in tempList:
             if city not in pathHistory.keys():
                 pathHistory[city] = dest
-        print("New children are ", end=" ")
+        print("New children are ")
         for city in tempList:
             if city not in que and city not in pathList:
                 que.append(city)
                 count+=1
-                print(city, end=" ")
+                print(city)
         print()
-        print("Open list is ", end=" ")
+        print("Open list is ")
         for qCity in list(que):
-            print(qCity, end=" ")
+            print(qCity)
         print()
         pathList.append(dest)
-        print("Closed list is ", end=" ")
+        print("Closed list is ")
         print(pathList)
         print()
 
@@ -129,7 +129,7 @@ def DFS(fromCity, toCity):
         tempList = dictMap[dest.upper()]
         tempList=sorted(tempList, reverse=True)
         print('Children are ',tempList)
-        print("New children are ", end=" ")
+        print("New children are ")
         for city in tempList:
             if city not in pathHistory.keys():
                 pathHistory[city] = dest
@@ -137,7 +137,7 @@ def DFS(fromCity, toCity):
             if city not in stack and city not in pathList:
                 stack.append(city)
                 count+=1
-                print(city, end=" ")
+                print(city)
         print('Open List is ',stack)
         pathList.append(dest)
         print('Closed List is ',pathList)
@@ -185,9 +185,9 @@ def DFID(fromCity, toCity, depth):
             print(count, ' nodes expanded. Destination not reached')
         else:
             resBFS = printPath(pathListDFID)
-            print("Depth-first-Iterative deepening solution: ", end=" ")
+            print("Depth-first-Iterative deepening solution: ")
             for DFIDcity in reversed(resBFS):
-                print(DFIDcity, end=" ")
+                print(DFIDcity)
             print()
             print(count, ' nodes expanded')
         print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
@@ -243,17 +243,17 @@ def aStar(fromCity, toCity, flag):
 def findPaths(fromCity, toCity):
     pathListBFS,count = BFS(fromCity, toCity)
     resBFS = printPath(pathListBFS)
-    print("Breadth-first-search solution: ", end=" ")
+    print("Breadth-first-search solution: ")
     for BFScity in reversed(resBFS):
-        print(BFScity, end=" ")
+        print(BFScity)
     print()
     print(count, ' nodes expanded')
     print('--------------------------------------------------------------------------------------------------------------------')
     pathListDFS,count = DFS(fromCity, toCity)
     resDFS = printPath(pathListDFS)
-    print("Depth-first-search solution: ", end=" ")
+    print("Depth-first-search solution: ")
     for DFScity in reversed(resDFS):
-        print(DFScity, end=" ")
+        print(DFScity)
     print()
     print(count, ' nodes expanded')
     print('--------------------------------------------------------------------------------------------------------------------')
@@ -261,18 +261,18 @@ def findPaths(fromCity, toCity):
     print('--------------------------------------------------------------------------------------------------------------------')
     pathListAStar,count = aStar(fromCity, toCity, 0)
     resAStar = printPath(pathListAStar)
-    print("A Star with h=0 ", end=" ")
+    print("A Star with h=0 ")
     for aStarcity in reversed(resAStar):
-        print(aStarcity, end=" ")
+        print(aStarcity)
     print()
     print(count, ' nodes expanded')
     print()
     print('--------------------------------------------------------------------------------------------------------------------')
     pathListAStar,count = aStar(fromCity, toCity, 1)
     resAStar = printPath(pathListAStar)
-    print("A Star with h=0 ", end=" ")
+    print("A Star with h=0 ")
     for aStarcity in reversed(resAStar):
-        print(aStarcity, end=" ")
+        print(aStarcity)
     print()
     print(count, ' nodes expanded')
     print()
@@ -289,7 +289,7 @@ j=0
 leng = len(tempList)
 while j < leng:
     if i < 6:
-        print(j+1,'. ', tempList[j], ' ', end=' ')
+        print(j+1,'. ', tempList[j], ' ')
         i+=1
         j+=1
     else:
