@@ -4,7 +4,7 @@
 # Program:   Assignment 5
 # Author:    Parthasarathy Krishnamurthy
 # Z-number:  z1729253
-# Date Due:  04/13/17
+# Date Due:  04/13/17, Thursday to learn Git
 # Purpose:   To implement BFS, DFS, DFID and A* search algorithms
 # Execution: python3 hw5.py
 
